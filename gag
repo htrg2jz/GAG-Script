@@ -1,0 +1,132 @@
+getgenv().gagConfig = {
+    BUY_TRAVELING_MERCHANT = { "Bee Egg", "Paradise Egg", "Fall Egg", "Loquat", "Feijoa", "Pitcher Plant" },
+    BUY_EVENT_SHOP = { "Gem Egg", "Santa's Surprise Present", "Christmas Present", "Christmas Crate", "Holiday Crate" },
+    PLANT_EVENT_TREES = true,
+	
+    MAX_PLANTS = 500,
+    DESTROY_UNTIL_MIN_PLANTS = 450,
+    KEEP_SEEDS = { "Bone Blossom" },
+    KEEP_SEEDS_AFTER_MAX_PLANTS = {},
+
+    PLACE_COSMETIC = { "Cooking Kit" },
+    
+    -- General:
+    AUTO_UPDATE_RESTART = true,
+    REDEEM_CODES = {},
+    EXTRA_PET_SLOTS = 5,
+    EXTRA_EGG_SLOTS = 5,
+    MAX_REBIRTH_SHECKLES = 0,
+    ADD_FRIEND = true,
+    OPEN_ALL_SEED_PACK = true,
+
+    BUY_COSMETIC_SHOP = { ["Cooking Kit"] = 3 },
+    
+    BUY_EGGS = { "Gem Egg", "Spooky Egg", "Jungle Egg", "Bug Egg", "Bee Egg", "Paradise Egg", "Zen Egg", "Safari Egg", "Rare Egg", "Common Egg", "Uncommon Egg", "Mythical Egg", "Legendary Egg" },
+    PLANT_EGGS = { "Gem Egg", "Paradise Egg", "Spooky Egg", "Jungle Egg", "Safari Egg" },
+    
+    BUY_SEED_SHOP = { "Octobloom Seed", "Zebrazinkle", "Crimson Thorn", "Romanesco", "Elder Strawberry", "Giant Pinecone", "Burning Bud", "Sugar Apple", "Ember Lily", "Beanstalk", "Sunflower", "Cacao", "Pepper", "Mushroom", "Grape", "Mango", "Dragon Fruit", "Cactus", "Coconut", "Bamboo", "Apple", "Pumpkin", "Watermelon", "Daffodil", "Corn", "Tomato", "Buttercup", "Blueberry", "Strawberry", "Carrot" },
+	
+    FAVOURITE_FRUIT_MUTATIONS = {},  -- Stop Autosell
+    SKIP_HARVEST_MUTATIONS = {},  -- Stop Harvest
+
+    KEEP_PETS = {
+			"Christmas Gorilla",
+			"Krampus",
+			"Arctic Fox",
+			"French Hen",
+			"Frost Dragon",
+			["Messenger Pigeon"] = 5,
+			["Camel"] = 5,
+			"Bearded Dragon",
+			"Chimera",
+			"Goblin Miner",
+			"Ruby Squid",
+			"Diamond Panther",
+			"Lion",
+			"Elephant", 
+			"Mummy",
+			"Lich",
+			"Goat",
+		 	"Headless Horseman", 
+		 	"Chicken Zombie", 
+			"Chinchilla",
+			"Mizuchi",
+			"Tiger",
+			"Swan",
+			"Phoenix",
+			"Cockatrice",
+			"Griffin",
+			"Golden Goose",
+			"Lobster Thermidor",
+			"French Fry Ferret",
+			"Corrupted Kitsune",
+			"Kitsune",
+			"Dilophosaurus",
+			"Moon Cat",
+			"Spinosaurus",
+			"T-Rex",
+			"Disco Bee",
+			"Butterfly",
+			"Queen Bee",
+			"Dragonfly",
+			"Raccoon",
+			"Fennec Fox",
+			"Mimic Octopus",
+			"Red Fox",
+			"Blood Owl",
+			"Capybara",
+			"Hydra",
+			"Peacock",
+			"Scarlet Macaw",
+			"Ostrich",
+			["Magpie"] = 5,
+			["Pack Mule"] = 5,
+			["Rhino"] = 8,
+			["Red Panda"] = 10,
+			["Starfish"] = 8,
+			["Shiba Inu"] = 1,
+			["Blood Kiwi"] = 2,
+			["Rooster"] = 8
+	},
+    KEEP_PETS_WEIGHT = 5,
+    KEEP_PETS_AGE = 60,
+
+	-- test
+	EQUIP_PET_SHARD = { ["Glimmering Sprite"] = "Glimmering" },
+	MAX_REBIRTH_SHECKLES = 1_000_000_000_000_000,
+	BUY_ASCEND_SHOP = { "Egg Capacity Upgrade" },
+
+    
+    EQUIP_PETS = {
+		{"Rhino", 8, 1},
+	},
+    LEVELUP_LOLLIPOP_MIN_LEVEL = 90,
+	
+    USE_PETS_FOR_UPGRADE_SLOT = { "Glimmering Sprite", "Sunny-Side Chicken", "Spaghetti Sloth", "Chubby Chipmunk", "Ghost Bear", "Starfish" },
+	EXTRA_PET_INVENTORY_SLOTS = 5,
+    REMOVE_PET_MAX_UPGRADE = { "Glimmering Sprite", "Starfish", "Robin", "Barn Owl" },  -- Unequip from garden
+
+    BUY_GEAR_SHOP = { "Grandmaster Sprinkler", "Master Sprinkler", "Godly Sprinkler", "Advanced Sprinkler", "Basic Sprinkler", "Trading Ticket", "Watering Can", "Levelup Lollipop" },
+    USE_SPRINKLER = { "Basic Sprinkler", "Master Sprinkler", "Godly Sprinkler", "Advanced Sprinkler", "Grandmaster Sprinkler" },
+
+    PET_WEBHOOK_URL = "https://discord.com/api/webhooks/1401757808659140730/478CYinxec-q81s2sHm0UsYGsdZ4iOvFPC0-LfGmDtxsvOhBRrpqbgl6EdqJ3PiNO4ss",
+	SHOW_PUBLIC_DISCORD_ID = false,
+    SEED_WEBHOOK_URL = "", 
+    NOTIFY_PETS = {
+			"Christmas Gorilla",
+			"Krampus",
+			"Arctic Fox",
+			"French Hen",
+			"Frost Dragon",
+			"Ruby Squid",
+			"Tiger",
+			"Queen Bee",
+			"Mimic Octopus",
+				},
+    NOTIFY_PETS_WEIGHT = { ["Red Giant Ant"] = 10, ["Bear Bee"] = 10, ["Tanchozuru"] = 10 },
+    DISCORD_ID = "",
+    WEBHOOK_NOTE = "GH",
+    SHOW_WEBHOOK_USERNAME = true,
+    SHOW_WEBHOOK_JOBID = false,
+}
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/6cb882027ef5de19462b160764dcfb53.lua"))()
